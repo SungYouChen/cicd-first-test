@@ -11,3 +11,4 @@ steps:
   image: php:7
   commands:
   - echo '123'
+  - echo '456'
