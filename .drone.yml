@@ -12,4 +12,3 @@ steps:
   commands:
   - echo '123'
   - echo '456'
-  - vendor/bin/phpunit --configuration config.xml
