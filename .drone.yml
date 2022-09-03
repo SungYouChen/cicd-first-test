@@ -19,6 +19,6 @@ steps:
   image: docker:dind
   volumes:
   - name: dockersock
-    path: /var/run
+    path: /var/lib
   commands:
   - docker ps -a
