@@ -1,3 +1,7 @@
-FROM ubuntu:18.04
+FROM golang
 
-RUN apt update
+WORKDIR /ithome
+ADD . /ithome
+RUN cd /ithome && go build
+
+CMD ["./ithome"]
