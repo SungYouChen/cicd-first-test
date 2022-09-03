@@ -16,9 +16,16 @@ steps:
   - echo 'php artisan test'
 
 - name: build image
+  when:
+    branch: 
+    - master
   image: docker:dind
   volumes:
   - name: dockersock
     path: /var/run/docker.sock
   commands:
-  - docker build . -t test_image
+  - docker build --no-cache --pull --force-rm -t rain/ithome:latest -f go.dockerfile .
+  volumes:
+  - name: dockersock
+  host:
+    path: /var/run/docker.sock
