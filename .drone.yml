@@ -11,4 +11,4 @@ steps:
   image: php:7
   commands:
   - echo '11111'
-  - echo '456'
+  - echo '456777'
