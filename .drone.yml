@@ -21,4 +21,4 @@ steps:
   - name: dockersock
     path: /var/run/docker.sock
   commands:
-  - docker build -t test_image
+  - docker build . -t test_image
