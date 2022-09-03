@@ -10,5 +10,4 @@ steps:
 - name: test
   image: php:7
   commands:
-  - echo '1237'
   - echo '456'
