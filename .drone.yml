@@ -31,3 +31,6 @@ steps:
     volumes:
     - name: dockersock
       path: /var/run
+  volumes:
+  - name: dockersock
+    temp: {}
