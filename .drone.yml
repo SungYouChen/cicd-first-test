@@ -31,3 +31,8 @@ steps:
   - name: dockersock
     host:
       path: /var/run/docker.sock
+build:
+    image: node:6.10.0
+    commands:
+      - yarn install
+      - yarn test
