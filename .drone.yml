@@ -13,4 +13,7 @@ steps:
   commands:
   - echo '開始單元測試'
   - echo 'php artisan test'
+
+- name: 查看檔案
+  commands:
   - ls
