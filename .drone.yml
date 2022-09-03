@@ -16,13 +16,7 @@ steps:
   - echo 'php artisan test'
 
 - name: build image
-  image: docker:dind
-  volumes:
-  - name: dockersock
-    path: /var/run/docker.sock
+  image: golang:1.12
   commands:
-  - docker build . -t test_image
-  volumes:
-  - name: dockersock
-  host:
-    path: /var/run/docker.sock
+  - go build
+  - go test
