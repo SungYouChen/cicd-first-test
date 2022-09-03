@@ -2,9 +2,10 @@ kind: pipeline
 name: default
 
 steps:
-- name: install
+- name: composer install
   image: composer
   commands:
+  - echo '開始安裝 composer'
   - composer install
 
 - name: test
