@@ -21,7 +21,7 @@ steps:
   - name: dockersock
     path: /var/run/docker.sock
   commands:
-  - docker build --no-cache --pull --force-rm -t test_image
+  - docker build -t test_image
   volumes:
   - name: dockersock
   host:
