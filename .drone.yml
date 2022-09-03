@@ -10,5 +10,5 @@ steps:
 - name: test
   image: php:7
   commands:
-  - echo 'why???'
+  - echo '111why???'
   - echo '456'
