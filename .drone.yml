@@ -21,7 +21,7 @@ steps:
   - name: dockersock
     path: /var/run/docker.sock
   commands:
-  - docker build --no-cache --pull --force-rm -t rain/ithome:latest -f go.dockerfile .
+  - docker build --no-cache --pull --force-rm -t rain/ithome:latest
   volumes:
   - name: dockersock
   host:
