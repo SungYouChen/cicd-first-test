@@ -12,13 +12,10 @@ steps:
 - name: Unit test
   image: php
   commands:
-  - echo '開始單元測試123'
+  - echo '開始單元測試'
   - echo 'php artisan test'
 
 - name: build image
-  when:
-    branch: 
-    - master
   image: docker:dind
   volumes:
   - name: dockersock
