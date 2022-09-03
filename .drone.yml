@@ -5,7 +5,7 @@ steps:
 - name: composer install
   image: composer
   commands:
-  - echo '開始 composer install~'
+  - echo '開始 composer install'
   - composer install
 
 - name: unit test
