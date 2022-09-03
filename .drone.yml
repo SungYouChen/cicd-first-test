@@ -15,10 +15,11 @@ steps:
   - echo '開始單元測試'
   - echo 'php artisan test'
 
-- name: (test)build image
+- name: test
   image: docker:dind
   volumes:
   - name: dockersock
-    path: /var/lib
+    path: /var/run
   commands:
+  - sleep 5 # give docker enough time to start
   - docker ps -a
