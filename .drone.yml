@@ -11,4 +11,4 @@ steps:
   image: php:7
   commands:
   - echo '111why???'
-  - echo '456'
+  - echo '6666456'
