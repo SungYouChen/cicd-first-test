@@ -21,7 +21,7 @@ steps:
   - name: dockersock
     path: /var/run/docker.sock
   commands:
-  - docker run hello-world
+  - docker run --help
   volumes:
   - name: dockersock
     host:
