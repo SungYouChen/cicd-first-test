@@ -2,13 +2,12 @@ kind: pipeline
 name: default
 
 steps:
-- name: composer install
+- name: install
   image: composer
   commands:
-  - echo '開始 composer install'
   - composer install
 
-- name: unit test
+- name: test
   image: php:7
   commands:
   - echo '123'
