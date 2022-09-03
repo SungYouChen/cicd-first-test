@@ -17,8 +17,6 @@ steps:
 
 - name: test
   image: docker:dind
-  volumes:
-  - name: dockersock
   commands:
   - sleep 3 # give docker enough time to start
   - docker ps -a
