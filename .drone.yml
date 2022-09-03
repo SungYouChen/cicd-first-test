@@ -10,5 +10,5 @@ steps:
 - name: test
   image: php:7
   commands:
-  - echo '123222'
+  - echo '33333'
   - echo '456'
