@@ -8,8 +8,8 @@ steps:
   - echo '開始安裝 composer'
   - composer install
 
-- name: test
-  image: php:7
+- name: Unit test
+  image: php
   commands:
-  - echo '11111'
-  - echo '456777'
+  - echo '開始單元測試'
+  - echo 'php artisan test'
