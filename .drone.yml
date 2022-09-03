@@ -20,12 +20,6 @@ steps:
   commands:
   - docker run --help
 
-build:
-    image: node:6.10.0
-    commands:
-      - yarn install
-      - yarn test
-
 - name: test2
   image: docker:dind
   volumes:
