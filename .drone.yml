@@ -20,3 +20,11 @@ steps:
   commands:
   - docker run --help
 
+- name: build
+  image: docker:17.05.0-ce-dind
+  environment:
+    - DOCKER_HOST=tcp://docker:2375
+  commands:
+    - sleep 5
+    - docker ps
+    - docker build -t hello-world .
