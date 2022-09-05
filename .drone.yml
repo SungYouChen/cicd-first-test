@@ -16,12 +16,12 @@ steps:
   - echo 'php artisan test'
 
 - name: test1
-  image: docker
+  image: docker:dind
   commands:
   - docker run --help
 
 - name: build
-  image: docker
+  image: docker:dind
   commands:
   - sleep 5
   - docker --help
