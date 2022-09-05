@@ -25,5 +25,5 @@ steps:
   commands:
   - sleep 5
   - docker --help
-  - docker ps
+  - docker ps --help
   - docker build -t hello-world .
