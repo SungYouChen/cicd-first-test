@@ -20,6 +20,21 @@ steps:
   commands:
   - docker run --help
 
+kind: pipeline
+name: default
+
+steps:
+- name: docker  
+  image: plugins/docker
+  settings:
+    username: kevinbacon
+    password: pa55word
+    repo: foo/bar
+    tags: latest
+
+
+
+
 - name: build
   image: plugins/docker
   commands:
