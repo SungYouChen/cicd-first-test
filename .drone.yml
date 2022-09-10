@@ -21,7 +21,7 @@ steps:
   - docker run --help
 
 - name: build
-  image: docker:dind
+  image: plugins/docker
   commands:
   - sleep 5
   - docker --help
