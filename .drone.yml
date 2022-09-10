@@ -23,7 +23,7 @@ steps:
 - name: build
   image: docker:dind
   commands:
-  - sleep 3
+  - sleep 5
   - docker --help
   - docker ps --all
   - docker build -t hello-world .
