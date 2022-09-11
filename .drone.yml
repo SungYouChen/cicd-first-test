@@ -15,13 +15,7 @@ steps:
   - echo '開始單元測試'
   - echo 'php artisan test'
 
-- name: test1
-  image: docker:dind
-  commands:
-  - docker run --help
-
-
-- name: docker  
+- name: dockerhub build & push image
   image: plugins/docker
   settings:
     username: mic121key
@@ -29,13 +23,3 @@ steps:
     repo: mic121key/autobuild
     tags: latest
 
-
-
-
-- name: build
-  image: plugins/docker
-  commands:
-  - sleep 5
-  - docker --help
-  - docker ps --all
-  - docker build -t hello-world .
