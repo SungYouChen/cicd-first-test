@@ -24,9 +24,9 @@ steps:
 - name: docker  
   image: plugins/docker
   settings:
-    username: kevinbacon
-    password: pa55word
-    repo: foo/bar
+    username: mic121key
+    password: Elk1306!@
+    repo: mic121key/autobuild
     tags: latest
 
 
