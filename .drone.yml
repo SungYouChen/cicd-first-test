@@ -12,7 +12,7 @@ steps:
 - name: Unit test
   image: php
   commands:
-  - echo '開始單元測試'
+  - echo '開始單元測試123'
   - echo 'php artisan test'
 
 - name: dockerhub build & push image
